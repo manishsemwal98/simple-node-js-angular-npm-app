@@ -2,9 +2,11 @@ FROM node:6
 
 WORKDIR /angular-app
 
-ADD $WORKSPACE /angular-app
+ADD . /angular-app
 
 RUN npm install 
+
+RUN npm build -prod
 
 CMD ["npm","start"]
 
