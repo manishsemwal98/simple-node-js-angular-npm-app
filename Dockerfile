@@ -4,7 +4,7 @@ WORKDIR /angular-app
 
 ADD $WORKSPACE /angular-app
 
-RUN npm install @angular/cli
+RUN npm install 
 
 CMD ["npm","start"]
 
