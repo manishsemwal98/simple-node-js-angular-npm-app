@@ -6,7 +6,7 @@ ADD . /angular-app
 
 RUN npm install 
 
-RUN npm build -prod
+RUN npm run build -prod
 
 CMD ["npm","start"]
 
